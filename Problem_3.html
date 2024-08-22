@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);       
+            gap:20px;
+        }
+        .box div{
+            width:300px;
+            height:250px;
+            border:1px solid black;
+        }
+        .box>div:first-child{
+            background-color: seagreen;
+        }
+        .box>div:nth-child(2){
+            background-color: turquoise;
+        }
+        .box>div:nth-child(3){
+            background-color: rgb(35, 102, 157);
+        }
+        .box>div:nth-child(4){
+            background-color: rgb(35, 157, 55);
+        }
+        .box>div:nth-child(5){
+            background-color: rgb(236, 143, 92);
+        }
+        .box>div:nth-child(6){
+            background-color: rgb(35, 137, 157);
+        }
+        .box>div:nth-child(7){
+            background-color: rgb(147, 35, 157);
+        }
+        .box>div:last-child{
+            background-color: rgb(240, 59, 71);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div>
+</body>
+</html>

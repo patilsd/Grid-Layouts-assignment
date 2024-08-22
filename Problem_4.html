@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #26a78f;
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+
+        }
+
+        .display {
+            grid-column: span 4;
+            background-color: #ecf0f1;
+            height: 60px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 10px;
+            font-size: 1.5em;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            background-color: #ffffff;
+            color: black;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #bdc3c7;
+            transform: scale(1.05);
+        }
+
+        .operator {
+            background-color: black;
+            color: white;
+        }
+
+        .operator:hover {
+            background-color: #34495e;
+        }
+
+        .clear {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .clear:hover {
+            background-color: #c0392b;
+        }
+    </style>>
+</head>
+
+<body>
+    <h1>Masai Calculator</h1>
+    <div class="calculator">
+        <div class="display"></div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button operator">+</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button operator">-</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button operator">x</div>
+        <div class="button clear">C</div>
+        <div class="button">0</div>
+        <div class="button operator">=</div>
+        <div class="button operator">/</div>
+    </div>
+</body>
+
+</html>
